@@ -40,3 +40,4 @@ Before | After
 
 # Possible todo
 * [ ] detect mid-sentence screaming
+* [ ] detect "mocking spongebob" text
