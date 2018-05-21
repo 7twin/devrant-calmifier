@@ -41,3 +41,4 @@ Before | After
 # Possible todo
 * [ ] detect mid-sentence screaming
 * [ ] detect "mocking spongebob" text
+* [ ] filter `@` tags from being detected as screaming or as lowercase
