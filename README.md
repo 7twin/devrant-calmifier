@@ -1,7 +1,7 @@
 ![image](https://user-images.githubusercontent.com/32747235/40332309-f734d0a4-5d53-11e8-98a7-af3d98e75e57.png)
 
 # devrant-calmifier
-Calm down rants, comments and profiles, that use too much punctuation marks or capslock their entire message
+Calm down rants, comments, feed and profiles, that use too much punctuation marks or capslock their entire message
 
 # TOC
 
