@@ -22,7 +22,7 @@
 
         // match only more than one occurence of exclamation or question marks
         // match only three or more full stops, because links get shortened with "..."
-        var punctuationMarks = input.match(/(([?!])\1+|([.]){4,})/gm);
+        var punctuationMarks = input.match(/(([?!])\2+|([.]){4,})/gm);
 
         // replace multiple occurences with single matched char
         input = input.replace(/([?!])\1+/gm,"$1");
