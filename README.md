@@ -32,10 +32,15 @@ Before | After
 ------ | -----
 ![image](https://user-images.githubusercontent.com/32747235/40331516-ee3ab732-5d50-11e8-836a-1065fe3341ec.png) | ![image](https://user-images.githubusercontent.com/32747235/40331471-c6ac96e0-5d50-11e8-819b-98d36a7825ff.png)
 
-# Instructions
-1. Get tampermonkey https://tampermonkey.net/ (available on chrome, microsoft edge, safari, firefox, firefox on android, opera next, dolphin browser and uc browser)
-2. Go to https://github.com/7twin/devrant-calmifier/raw/master/calmifier.user.js - it will automatically redirect you to the tampermonkey install page
-3. Save & Enjoy!
+# Download
+Download tampermonkey:
+
+* **Chrome:** https://chrome.google.com/webstore/detail/tampermonkey/dhdgffkkebhmkfjojejmpbldmpobfkfo
+* **Firefox:** https://addons.mozilla.org/en-US/firefox/addon/tampermonkey/
+* **Opera:** https://addons.opera.com/en/extensions/details/tampermonkey-beta/
+* **Other:** https://tampermonkey.net/ (follow instructions there)
+
+Then install the user-script here: https://github.com/7twin/devrant-calmifier/raw/master/calmifier.user.js
 
 # Todo
 * [X] detect mid-sentence screaming
