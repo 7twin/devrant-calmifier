@@ -9,7 +9,7 @@ Calm down rants, comments, feed and profiles, that use too much punctuation mark
   * [Comments](#comments)
   * [Profiles](#profiles)
   * [Rants](#rants)
-* [Instructions](#instructions)
+* [Download](#download)
 * [Todo](#todo)
 
 # Screenshots
