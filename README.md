@@ -42,3 +42,4 @@ Before | After
 * [ ] detect "mocking spongebob" text
 * [ ] filter `@` tags from being detected as screaming or as lowercase
 * [X] filter emojis from getting detected
+* [ ] linkify `@` tags
