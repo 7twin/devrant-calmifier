@@ -38,7 +38,7 @@ Before | After
 3. Save & Enjoy!
 
 # Possible todo
-* [ ] detect mid-sentence screaming
+* [X] detect mid-sentence screaming
 * [ ] detect "mocking spongebob" text
 * [ ] filter `@` tags from being detected as screaming or as lowercase
-* [ ] filter emojis from getting detected
+* [X] filter emojis from getting detected
