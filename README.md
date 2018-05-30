@@ -20,17 +20,11 @@ Before | After
 ------ | -----
 ![image](https://user-images.githubusercontent.com/32747235/40331228-ed99ae56-5d4f-11e8-93a0-312512612aa2.png) | ![image](https://user-images.githubusercontent.com/32747235/40331201-d60e0b06-5d4f-11e8-85a5-3926670573f0.png)
 
-## Profiles
+## Profiles / Rants
 
 Before | After
 ------ | -----
 ![image](https://user-images.githubusercontent.com/32747235/40331429-9f891b92-5d50-11e8-86bd-3012547b7c43.png) | ![image](https://user-images.githubusercontent.com/32747235/40331392-8440f0bc-5d50-11e8-8b4c-c4f6b428a97a.png)
-
-## Rants
-
-Before | After
------- | -----
-![image](https://user-images.githubusercontent.com/32747235/40331516-ee3ab732-5d50-11e8-836a-1065fe3341ec.png) | ![image](https://user-images.githubusercontent.com/32747235/40331471-c6ac96e0-5d50-11e8-819b-98d36a7825ff.png)
 
 # Download
 Download tampermonkey:
