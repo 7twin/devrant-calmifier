@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Devrant Calmifier
 // @namespace    https://devrant.com/
-// @version      0.2
+// @version      0.3
 // @description  Calm down rants, feed, comments and profiles
 // @author       7twin
 // @match        https://devrant.com/rants/*
@@ -15,7 +15,6 @@
 // ==/UserScript==
 
 /* config start */
-    // make capslocked sentences half transparent after lowercasing them
     var highlight_changes = false;
 /* config end */
 
@@ -31,7 +30,7 @@
 
         // replace multiple occurences with single matched char
         input = input.replace(/([?!])\1+/gm,"$1");
-        input = input.replace(/([.]){3,}/gm,"$1");
+        input = input.replace(/([.]){4,}/gm,"$1");
 
         input = input.replace(/((\b[A-Z]{1,}\b)(?:\s*)){2,}/gm, function(m){
             return ((highlight_changes === true) ? '<span style="color:rgba(255,255,255,0.65)">'+m.toLowerCase()+'</span>' : m.toLowerCase())
