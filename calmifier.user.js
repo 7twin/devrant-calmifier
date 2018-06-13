@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Devrant Calmifier
 // @namespace    https://devrant.com/
-// @version      0.3
+// @version      0.4
 // @description  Calm down rants, feed, comments and profiles
 // @author       7twin
 // @match        https://devrant.com/rants/*
@@ -9,8 +9,6 @@
 // @match        https://devrant.com/users/*
 // @grant        none
 // @require      https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js
-// @require      https://cdn.rawgit.com/nfrasser/linkify-shim/master/linkify.min.js
-// @require      https://cdn.rawgit.com/nfrasser/linkify-shim/master/linkify-jquery.min.js
 // @require      https://cdn.polyfill.io/v2/polyfill.min.js
 // ==/UserScript==
 
@@ -19,6 +17,20 @@
 /* config end */
 
 (function() {
+    var linkify_str = function(old,changed){
+        const regex = /<a\s+href=(?:"([^"]+)"|'(?:[^']+)').*?>(.*?)<\/a>/g;
+        let m;
+
+        while ((m = regex.exec(old)) !== null) {
+            // This is necessary to avoid infinite loops with zero-width matches
+            if (m.index === regex.lastIndex) regex.lastIndex++;
+
+            changed = changed.replace(m[2],"<a href='"+m[1]+"'>"+m[2]+"</a>");
+        }
+
+        return changed;
+    };
+
     $("h1.rantlist-content,.rantlist-title-text,.username-row+.rantlist-title").each(function(){
         var input = $(this).text();
         var lowercase = input.match(/[a-z]/gm); lowercase = ((lowercase) ? lowercase.length : 0);
@@ -45,13 +57,10 @@
         var diffPercent = Math.round((changed/total)*100);
 
         // only trigger if the text contains more uppercase than lowercase
-        if(diffPercent > 0){
-           $(this).html((input+"<br><br><b>[calmed: " + diffPercent + "%]</b>").replace(/\n/g, '<br />'));
-        }
+        // also linkify stripped hyperlinks
 
-        // linkify links that got stripped
-        $(this).linkify({
-            target: "_blank"
-        });
+        if(diffPercent > 0){
+           $(this).html((linkify_str($(this).html(),input)+"<br><br><b>[calmed: " + diffPercent + "%]</b>").replace(/\n/g, '<br />'));
+        }
     });
 })();
