@@ -10,7 +10,6 @@ Calm down rants, comments, feed and profiles, that use too much punctuation mark
   * [Profiles](#profiles)
   * [Rants](#rants)
 * [Download](#download)
-* [Todo](#todo)
 
 # Screenshots
 
@@ -35,11 +34,3 @@ Download tampermonkey:
 * **Other:** https://tampermonkey.net/ (follow instructions there)
 
 Then install the user-script here: https://github.com/7twin/devrant-calmifier/raw/master/calmifier.user.js
-
-# Todo
-* [X] detect mid-sentence screaming
-* [ ] detect "mocking spongebob" text
-* [ ] filter `@` tags from being detected as screaming or as lowercase
-* [X] filter emojis from getting detected
-* [ ] linkify `@` tags
-* [ ] fix - with the new patch links get stripped
