@@ -1,11 +1,11 @@
 // ==UserScript==
 // @name         Devrant Calmifier
 // @namespace    https://devrant.com/
-// @version      0.4
+// @version      0.5
 // @description  Calm down rants, feed, comments and profiles
 // @author       7twin
 // @match        https://devrant.com/rants/*
-// @match        https://devrant.com/feed/
+// @match        https://devrant.com/feed*
 // @match        https://devrant.com/users/*
 // @grant        none
 // @require      https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js
